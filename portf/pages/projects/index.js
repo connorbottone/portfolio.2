@@ -62,13 +62,13 @@ export default function Home() {
                       </h3>
                       <nav className="nav flex-column">
                         <a className="nav-link text-white" href="/">
-                          Go Back
+                          Home
                         </a>
-                        <a className="nav-link text-white" href="#">
+                        <a className="nav-link text-white" href="/contact">
                           Contact
                         </a>
-                        <a className="nav-link text-white" href="#">
-                          Resume
+                        <a className="nav-link text-white" href="/resume">
+                          About
                         </a>
                       </nav>
                     </div>

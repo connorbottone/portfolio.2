@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Flip from '@/components/smallflip';
 
 export default function Home() {
   const [isLightMode, setIsLightMode] = useState(false);
@@ -71,28 +72,28 @@ export default function Home() {
                         <a className="nav-link text-white" href="/contact">
                           Contact
                         </a>
-                        <a className="nav-link text-white" href="#">
-                          Resume
+                        <a className="nav-link text-white" href="/resume">
+                          About
                         </a>
                       </nav>
+                    </div> <div style={{color:"white"}}className="position-absolute bottom-0 end-0 ">
+                      <Flip/>
                     </div>
-                    <div style={{color:"white"}}className="position-absolute bottom-0 end-0 ">
-                      Born  1995  <br />
-                      In New Jersey
-                      <br />
-                      Passionate Developer
-                      <br />
-                      with a thirst for knowledge
-                      <br />
-                      dddddddddddd
-                      <br />
-                      dddddddddddd
-                      <br />
-                      dddddddddddd
-                      <br />
-                      dddddddddddd
+                   
+
+                  </div>    <div  style={{zIndex:"1",color:"white",fontFamily:"Merriweather" }}className='col-md-8 col-lg-11  align-items-center'>
+                      <div className="text-center">
+                        <h5>Technology has revolutionized <br />
+                        the way we live our personal<br />
+                        and professional lives.<br />
+                        My mission is to continue<br />
+                        to grow my knowledge to help<br />
+                        businesses and consumers develop<br />
+                        apps that will help them <br />
+                        navigate this modern world.<br /></h5>
+                      </div>
                     </div>
-                  </div>
+                 
                 </div>
                 <div style={{...togglerStyles, bottom:"7%"}}>
                   <input

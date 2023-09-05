@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import FormData from '@/components/Formdata';
+import Flip from '@/components/smallflipjr';
 
 export default function Home() {
   const [isLightMode, setIsLightMode] = useState(false);
@@ -70,13 +71,14 @@ export default function Home() {
                           Projects
                         </a>
                         <a className="nav-link text-white" href="/">
-                          Go Back
+                          Home
                         </a>
-                        <a className="nav-link text-white" href="#">
-                          Resume
+                        <a className="nav-link text-white" href="/resume">
+                          About
                         </a>
                       </nav>
                     </div>
+                    
                   
                   </div>
                 </div>
