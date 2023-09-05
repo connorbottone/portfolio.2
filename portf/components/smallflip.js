@@ -76,14 +76,14 @@ const Grid = () => {
           <div
             style={{
               position: 'absolute',
-              top: '110%',
+              top: '70%',
               left: '50%',
               transform: 'translate(-50%, -50%)',
               textAlign: 'center',
               color: 'White', // Change link text color
               zIndex: 1,
             }}
-          > <p style={{ animation: 'colorCycle 4s infinite' }}> @2023</p>
+          > <h5 style={{ animation: 'colorCycle 4s infinite' }}> ?</h5>
           <br />
        
                      

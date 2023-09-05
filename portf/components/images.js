@@ -3,10 +3,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const products = [
   {
-    name: '*Advanced-Ticketing-System*', image: '/degmor.mp4', description: "e.",
+    name: 'Advanced-Ticketing-System', image: '/degmor.mp4', description: "A user with the Role assigner can create a ticket & create new accounts. When creating a ticket the user can upload a before image and a pdf of the work order with other required fields. Next the user can assign this ticket to a fieldtech. The fieldtech will receive an email of the new ticket. The field tech can acces google maps  through adresss link ,  upload before & after images, leave comments and change the status of the ticket. Once completed the assigner will receive an email he now can create his proposal. After the  form fields have been entered a pdf will be generated that contains the before and after images from the field tech auto sales tax calculation and population of all necessary information from the ticket. This pdf can be downloaded . Now the user can upload a final purchase order pdf and close the ticket. The user can go to there closed ticket and view all uploaded documents and images. :Vercel , Next.js , Bootstrap,Puppeteer, Hygrpah  : Contact me to Request a demo",
     webpagelink: "https://masterytft.herokuapp.com/",
     githublink: "https://github.com/connorbottone/Tft.git",
-},
+},{ name: 'Custom Feature', image: '/flipprev.mp4', description: "This was a cuctom feture I built that acounts for the direction inwich the mouse is entering and leaving from. By adding a grid overlay I was able to achive this . You can try a portion of this out for youreslf back at the homepage. " },
     {
         name: 'TFT-Mastery', image: '/tft.webm', description: "e.",
         webpagelink: "https://masterytft.herokuapp.com/",
@@ -18,7 +18,7 @@ const products = [
     githublink: "https://github.com/connorbottone/City-Weather-Tracker.git", },
     { name: 'Study-Helper', image: '/StudyHelper.webm', description: " I have developed an application using React that seamlessly integrates MongoDB Atlas and Apollo GraphQL. This applicaiton was designed to help sutdents study aswell as give teachers a fun way to engae with ther students. This application uses and apollo server aswell as mongosse atlas integration with heroku to create a full stack application. A user has the ability to browse pre-made quizes from grades 1-3. The user must be loged in to use any of this content. This is achived by assigned a token to each user apon login. The user can also create thier own quizes and save them to the database. The user can then search for there newly created quiz by title to begin taking th quiz. This feature was added for teachers to be able to create cutom quizes for there classroom. ", webpagelink: "https://safe-ridge-06648.herokuapp.com/",
     githublink: "https://github.com/connorbottone/StudyHelper.git", },
-    { name: 'Product 5', image: '/bck.gif', description: "This is a description lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo." },
+    
 ];
 
 const ProductCardPage = () => {
@@ -39,7 +39,7 @@ const ProductCardPage = () => {
                     loop
                  
                     
-                    style={{ width: '100%', height: '76%',objectFit: 'fill'  , marginTop: '10%'}}
+                    style={{ width: '100%', height: '79%',objectFit: 'fill' , marginTop:'10px' }}
 
                   src={hoveredProduct !== null ? products[hoveredProduct].image : products[0].image}
                   alt={products[0].name}
@@ -67,9 +67,9 @@ const ProductCardPage = () => {
                   </ul>
                   <div className="card mt-4 p-4 border">
                     <div className="card-body text-center">
-                      {hoveredProduct !== null ? products[hoveredProduct].description : ''}
+                     <p style={{fontSize:"12px"}}>{hoveredProduct !== null ? products[hoveredProduct].description : products[0].description }</p> 
                     </div>
-                    {hoveredProduct !== null && (
+                    {hoveredProduct !== null && hoveredProduct !== 0 &&  hoveredProduct !== 1&& (
                       <div className="text-center mt-2">
                         <a href={products[hoveredProduct].webpagelink} target="_blank" rel="noopener noreferrer">
                           Webpage Link
@@ -79,9 +79,7 @@ const ProductCardPage = () => {
                           GitHub Link
                         </a>
                         <br />
-                        <a href={`/projects/${products[hoveredProduct].name}`}>
-                          Learn More
-                        </a>
+                       
                         
                         
                       </div>
